@@ -125,7 +125,7 @@ class Topic extends Post
             }
 
             $username = Yii::$app->user->identity->username;
-            $url = Url::to('/member/' . $username, true);
+            $url = Url::to('/member/' . $username, false);
             $this->content = TopicService::contentTopic($this->content, $this) .
                 ($this->cc ? t('app', 'cc {username} {url}', ['username' => $username, 'url' => $url]) : '');
 

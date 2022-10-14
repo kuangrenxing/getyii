@@ -24,7 +24,7 @@ $jobsActive = ($node == 'jobs') ? true : false;
 
 NavBar::begin([
 //     'brandLabel' => Html::img('/images/logo.png'),
-    'brandLabel' => 'Get√Yii',
+    'brandLabel' => '论坛系统',
     'brandUrl' => Yii::$app->homeUrl,
     'options' => [
         'class' => 'navbar-white br0 navbar-fixed-top navbar',

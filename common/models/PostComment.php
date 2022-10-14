@@ -59,7 +59,7 @@ class PostComment extends ActiveRecord
             [['parent', 'post_id', 'status', 'user_id', 'like_count', 'created_at', 'updated_at'], 'integer'],
             [['post_id', 'comment', 'user_id', 'ip'], 'required'],
             [['comment'], 'string', 'min' => 1],
-            ['comment', SpamValidator::className(), 'message' => '请勿发表垃圾内容'],
+//            ['comment', SpamValidator::className(), 'message' => '请勿发表垃圾内容'],
             [['ip'], 'string', 'max' => 255]
         ];
     }

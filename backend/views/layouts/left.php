@@ -68,7 +68,7 @@
                             ['label' => '积分日志', 'icon' => 'money', 'url' => ['/merit/merit-log']],
                         ]
                     ],
-                    ['label' => '搜索日志', 'icon' => 'search', 'url' => ['/search-log/index']],
+//                    ['label' => '搜索日志', 'icon' => 'search', 'url' => ['/search-log/index']],
                     ['label' => '右边栏设置', 'icon' => 'diamond', 'url' => ['/right-link/index']],
                 ], $debugMenu),
             ]

@@ -109,7 +109,7 @@ class Post extends ActiveRecord
             [['excerpt', 'image'], 'string', 'max' => 255],
             [['author'], 'string', 'max' => 100],
             [['cc', 'tags'], 'safe'],
-            ['content', SpamValidator::className(), 'message' => '请勿发表垃圾内容'],
+//            ['content', SpamValidator::className(), 'message' => '请勿发表垃圾内容'],
             ['title', SpamValidator::className(), 'message' => '请勿发表垃圾内容'],
         ];
     }
