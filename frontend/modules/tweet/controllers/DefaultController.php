@@ -78,17 +78,17 @@ class DefaultController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             $topService = new TweetService();
             if (!$topService->filterContent($model->content)) {
-                $model->addError('content', '请勿发表无意义的内容');
+                $model->addError('content', '内容无实际内容，请勿灌水噢');
                 return $this->redirect('index');
             }
             $model->user_id = Yii::$app->user->id;
             $model->type = $model::TYPE;
             if ($model->save()) {
-                $this->flash('发表成功!', 'success');
+                $this->flash('动弹创建成功!', 'success');
             }
         }
         if ($model->hasErrors()) {
-            $this->flash('发表失败!' . array_values($model->firstErrors)[0], 'error');
+            $this->flash('动弹创建失败，请重试!' . array_values($model->firstErrors)[0], 'error');
         }
         return $this->redirect('index');
     }
