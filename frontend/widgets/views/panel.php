@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 15/4/18 下午4:16
- * description:
- */
+
 use yii\helpers\Html;
 
 ?>

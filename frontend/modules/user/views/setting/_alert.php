@@ -1,10 +1,4 @@
 <?php
-/**
- * @Author: forecho
- * @Date:   2015-01-29 23:01:08
- * @Last Modified by:   forecho
- * @Last Modified time: 2015-01-31 19:32:42
- */
 
 if ($module->enableFlashMessages): ?>
     <div class="row">

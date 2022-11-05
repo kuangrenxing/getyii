@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizh@chexiu.cn>
- * createTime : 2016/3/10 14:39
- * description:
- */
+
 
 namespace backend\controllers;
 

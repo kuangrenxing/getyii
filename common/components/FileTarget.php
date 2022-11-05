@@ -1,10 +1,6 @@
 <?php
 
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 2015/12/22 18:13
- * description:
- */
+
 namespace common\components;
 
 use Yii;

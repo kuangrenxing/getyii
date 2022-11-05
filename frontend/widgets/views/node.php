@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 15/4/25 下午1:44
- * description:
- */
+
 /** @var \common\models\PostMeta[] $nodes */
 ?>
 <?php if (isset($nodes) && !empty($nodes)) : ?>

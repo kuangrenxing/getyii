@@ -13,8 +13,8 @@ $content = '
 
 #### 社区维护
 
-- [forecho](/member/forecho)
-- [zghack](/member/zghack)
+- [test1](/member/test1)
+
 
 #### 网站功能开发者
 

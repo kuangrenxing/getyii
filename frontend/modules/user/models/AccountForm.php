@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: forecho
- * @Date:   2015-01-30 23:01:28
- * @Last Modified by:   forecho
- * @Last Modified time: 2015-01-31 21:08:34
- */
+
 
 namespace frontend\modules\user\models;
 

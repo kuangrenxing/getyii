@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: forecho
- * @Date:   2015-01-24 22:21:45
- * @Last Modified by:   forecho
- * @Last Modified time: 2015-04-12 12:24:48
- */
+
 
 namespace frontend\modules\user\controllers;
 

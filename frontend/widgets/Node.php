@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 15/4/25 下午1:42
- * description:
- */
+
 
 namespace frontend\widgets;
 

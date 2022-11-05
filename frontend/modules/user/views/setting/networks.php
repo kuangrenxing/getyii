@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: forecho
- * @Date:   2015-01-29 23:23:12
- * @Last Modified by:   forecho
- * @Last Modified time: 2015-01-30 22:56:49
- */
+
 
 use frontend\widgets\Connect;
 use yii\helpers\Html;

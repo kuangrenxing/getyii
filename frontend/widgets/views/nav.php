@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizh@snsshop.com>
- * createTime : 2015/4/23 17:23
- * description:
- */
+
 use rmrevin\yii\fontawesome\FA;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;

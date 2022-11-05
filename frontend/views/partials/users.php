@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizh@chexiu.cn>
- * createTime : 2016/4/19 14:44
- * description:
- */
+
 use yii\helpers\Html;
 /** @var \yii\base\Object $model */
 /** @var \common\models\User $value */

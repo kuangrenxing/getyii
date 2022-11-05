@@ -3,9 +3,7 @@ namespace frontend\assets;
 
 use yii\web\AssetBundle;
 
-/**
- * @author forecho <caizhenghai@gmail.com>
- */
+
 class EmojifyAsset extends AssetBundle
 {
     public $sourcePath = '@bower/emojify.js';

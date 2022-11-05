@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizh@snsshop.com>
- * createTime : 2015/4/21 16:56
- * description:
- */
+
 
 namespace common\services;
 

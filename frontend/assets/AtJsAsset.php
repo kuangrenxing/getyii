@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 2016/3/10 11:24
- * description:
- */
+
 
 namespace frontend\assets;
 

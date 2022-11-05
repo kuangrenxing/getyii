@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 2015/8/4 14:19
- * description:
- */
+
 
 namespace common\helpers;
 

@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: forecho
- * @Date:   2015-01-29 23:01:08
- * @Last Modified by:   forecho
- * @Last Modified time: 2015-02-01 17:08:08
- */
+
 
 use yii\widgets\Menu;
 

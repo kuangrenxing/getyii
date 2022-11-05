@@ -27,14 +27,14 @@ $content = '
 - ~~删除线~~ - `~~删除线~~`
 - `Code 标记` - ``Code 标记``
 - [超级链接](http://github.com) - `[超级链接](http://github.com)`
-- [caizhenghai@gmail.com](mailto:caizhenghai@gmail.com) - `[caizhenghai@gmail.com](mailto:caizhenghai@gmail.com)`
+- [zhangsan@126.com](mailto:zhangsan@126.com) - `[zhangsan@126.com](mailto:zhangsan@126.com)`
 - ![图片](http://7xjanb.com1.z0.glb.clouddn.com/logo.png) - `![图片](http://7xjanb.com1.z0.glb.clouddn.com/logo.png)`
 
 注：暂不支持上传图片，请使用外链图片。推荐图床：http://drp.io/ 和 https://imgur.com/
 
 ### 提及用户
 
-@forecho @caicai ... 通过 @ 可以在发帖和回帖里面提及用户，信息提交以后，被提及的用户将会收到系统通知。以便让他来关注这个帖子或回帖。切记：@某人之后有一个空格。
+@test1 @caicai ... 通过 @ 可以在发帖和回帖里面提及用户，信息提交以后，被提及的用户将会收到系统通知。以便让他来关注这个帖子或回帖。切记：@某人之后有一个空格。
 
 ### 表情符号 Emoji
 

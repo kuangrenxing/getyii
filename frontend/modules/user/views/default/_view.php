@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: forecho
- * @Date  :   2015-01-29 23:26:54
- * @Last  Modified by:   forecho
- * @Last  Modified time: 2015-02-04 21:53:45
- */
+
 
 use yii\helpers\Html;
 use yii\helpers\HtmlPurifier;

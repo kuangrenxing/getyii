@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 15/4/12 上午10:38
- * description: Markdown 提示
- */
+
 ?>
 <div id="reply-notice" style="display:none">
     <ul>

@@ -1,10 +1,5 @@
 <?php
-/**
- * @Author: forecho
- * @Date:   2015-02-27 11:08:56
- * @Last Modified by:   forecho
- * @Last Modified time: 2015-02-27 11:38:44
- */
+
 
 namespace frontend\widgets;
 

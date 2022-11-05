@@ -69,7 +69,7 @@ $content = '
 
 ### 贡献者
 
-- [forecho](/member/forecho)
+- [test1](/member/test1)
 
 ### 最后
 

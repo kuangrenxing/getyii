@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 15/4/20 下午9:15
- * description:
- */
+
 
 use common\widgets\JsBlock;
 use yii\helpers\Html;
@@ -32,13 +28,13 @@ use yiier\editor\EditorMdWidget;
     ]); ?>
 
     <?= $form->field($model, 'comment')->widget(EditorMdWidget::className(), [
-        'clientOptions' => [	
-            'height' => 200,	
-            'imageUpload' => true,	
+        'clientOptions' => [
+            'height' => 200,
+            'imageUpload' => true,
             'autoFocus' => false,
-            'placeholder' => '请尽量让自己的回复能够对别人有帮助',	
-            'imageUploadURL' => Url::to(['/site/upload', 'field' => 'editormd-image-file']),	
-        ]	
+            'placeholder' => '请尽量让自己的回复能够对别人有帮助',
+            'imageUploadURL' => Url::to(['/site/upload', 'field' => 'editormd-image-file']),
+        ]
     ]) ?>
 
         <div class="form-group">

@@ -1,9 +1,5 @@
 <?php
-/**
- * author     : forecho <caizhenghai@gmail.com>
- * createTime : 15/4/19 下午3:11
- * description:
- */
+
 
 namespace frontend\modules\user\controllers;
 

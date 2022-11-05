@@ -3,9 +3,7 @@ namespace common\assets;
 
 use yii\web\AssetBundle;
 
-/**
- * @author forecho <caizhenghai@gmail.com>
- */
+
 class CaretJs extends AssetBundle
 {
     public $sourcePath = '@bower/caret.js/dist';
