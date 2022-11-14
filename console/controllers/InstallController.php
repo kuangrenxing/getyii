@@ -91,7 +91,7 @@ class InstallController extends Controller
             'default' => 'localhost'
         ]);
         $dbName = $this->prompt('请输入数据库名称:', [
-            'default' => 'getyii'
+            'default' => 'yii'
         ]);
         $dbConfig = [
             'dsn' => "mysql:host={$host};dbname={$dbName}",

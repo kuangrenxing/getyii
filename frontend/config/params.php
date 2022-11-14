@@ -6,6 +6,6 @@ return [
     'donateTag' => ['求打赏', '技巧库','php','Java'], // 开启标签
     'postingIntervalLimit' => 3, // 限制发帖间隔，单位秒。默认是 1 个小时
     'setting' => [
-        'xunsearch' => false, // true 表示开启 GetYii xunsearch 搜索功能，默认不开启
+        'xunsearch' => false, // true 表示开启  xunsearch 搜索功能，默认不开启
     ],
 ];

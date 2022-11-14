@@ -192,7 +192,7 @@ class SiteController extends Controller
 
     public function actionBook()
     {
-        return $this->redirect('http://book.getyii.com');
+        return $this->redirect('https://www.yiiframework.com/');
     }
 
     public function actionMarkdown()

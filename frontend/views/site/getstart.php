@@ -59,7 +59,6 @@ $content = '
 
 #### 基于Yii2
 
-- [GetYii](https://github.com/iiYii/getyii)
 - [huajuan](https://github.com/callmez/huajuan)
 - [dcms2](https://github.com/djfly/dcms2)
 - [yii2-adminlte](https://github.com/funson86/yii2-adminlte)
