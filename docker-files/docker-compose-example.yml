@@ -1,8 +1,8 @@
 mysql:
   image: mysql
   environment:
-    - MYSQL_DATABASE=getyii
-    - MYSQL_ROOT_PASSWORD=getyii.com
+    - MYSQL_DATABASE=tech_bbs
+    - MYSQL_ROOT_PASSWORD=123456
   ports:
     - 3306:3306
 
@@ -13,8 +13,8 @@ web:
   ports:
     - 80:80
   environment:
-    - MYSQL_INSTANCE_NAME=getyii
-    - MYSQL_PASSWORD=getyii.com
+    - MYSQL_INSTANCE_NAME=tech_bbs
+    - MYSQL_PASSWORD=123456
     - APP_ENV=Production
   volumes:
     - ./vendor:/app/vendor:rw

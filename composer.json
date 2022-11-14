@@ -1,5 +1,5 @@
 {
-  "name": "iiyii/getyii",
+  "name": "iiyii/tech_bbs",
   "description": "Yii 2 Community",
   "keywords": [
     "yii2",
@@ -8,14 +8,9 @@
     "community",
     "application template"
   ],
-  "homepage": "https://github.com/iiYii/getyii/",
   "type": "project",
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/iiYii/getyii/issues?state=open",
-    "forum": "http://www.getyii.com/",
-    "wiki": "https://github.com/iiYii/getyii/wiki/",
-    "source": "https://github.com/iiYii/getyii"
   },
   "minimum-stability": "stable",
   "require": {

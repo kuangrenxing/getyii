@@ -34,8 +34,8 @@ php yii migrate
 
 添加以下两个域名加到自己机器的 host 里面
 
-	<your_docker_ip> <your_name>.dev.getyii.com 前台
-	<your_docker_ip> <your_name>.dev.admin.getyii.com 后台
+	<your_docker_ip> <your_name>.dev.yii.com 前台
+	<your_docker_ip> <your_name>.dev.admin.yii.com 后台
 
 ### 用户相关
 
