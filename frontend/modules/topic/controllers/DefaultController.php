@@ -9,7 +9,7 @@ use common\models\Search;
 use common\models\SearchLog;
 use common\models\User;
 use common\services\PostService;
-use common\services\TopicService;
+use common\services\TalkService;
 use frontend\modules\topic\models\Topic;
 use frontend\modules\user\models\Donate;
 use Yii;
@@ -163,14 +163,14 @@ class DefaultController extends Controller
             return $this->redirect('index');
         }
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            $topService = new TopicService();
-            if (!$topService->filterContent($model->title) || !$topService->filterContent($model->content)) {
-                $model->addError('content', '请勿发表无意义的内容');
+            $talkService = new TalkService();
+            if (!$talkService->checkContent($model->title) || !$talkService->checkContent($model->content)) {
+                $model->addError('content', '敏感信息请勿发表');
                 return $this->redirect('create');
             }
 
             if ($model->save(false)) {
-                $this->flash('发表文章成功!', 'success');
+                $this->flash('发帖成功!', 'success');
                 return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
@@ -224,7 +224,7 @@ class DefaultController extends Controller
             $this->flash("「{$model->title}」此文章已有回复，属于共有财产，不能删除", 'warning');
         } else {
 
-            TopicService::delete($model);
+            TalkService::delete($model);
             $revoke = Html::a('撤消', ['/topic/default/revoke', 'id' => $model->id]);
             $this->flash("「{$model->title}」文章删除成功。 反悔了？{$revoke}", 'success');
         }
@@ -244,7 +244,7 @@ class DefaultController extends Controller
         if (!($model && (User::getThrones() || $model->isCurrent()))) {
             throw new NotFoundHttpException;
         }
-        TopicService::revoke($model);
+        TalkService::revoke($model);
         $this->flash("「{$model->title}」文章撤销删除成功。", 'success');
         return $this->redirect(['/topic/default/view', 'id' => $model->id]);
     }
@@ -261,7 +261,7 @@ class DefaultController extends Controller
         $user = Yii::$app->user->identity;
         $model = Topic::findTopic($id);
         if ($user && ($user->isAdmin($user->username) || $user->isSuperAdmin($user->username))) {
-            TopicService::excellent($model);
+            TalkService::excellent($model);
             $this->flash("操作成功", 'success');
             return $this->redirect(['/topic/default/view', 'id' => $model->id]);
         } else {

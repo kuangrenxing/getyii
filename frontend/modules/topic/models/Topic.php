@@ -9,7 +9,7 @@ use common\models\PostTag;
 use common\models\Search;
 use common\models\UserInfo;
 use common\services\NotificationService;
-use common\services\TopicService;
+use common\services\TalkService;
 use frontend\modules\user\models\UserMeta;
 use Yii;
 use yii\helpers\Url;
@@ -122,7 +122,7 @@ class Topic extends Post
 
             $username = Yii::$app->user->identity->username;
             $url = Url::to('/member/' . $username, false);
-            $this->content = TopicService::contentTopic($this->content, $this) .
+            $this->content = TalkService::contentTopic($this->content, $this) .
                 ($this->cc ? t('app', 'cc {username} {url}', ['username' => $username, 'url' => $url]) : '');
 
             if ($insert) {

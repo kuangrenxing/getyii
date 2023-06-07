@@ -34,7 +34,7 @@ class PostService
      * @param $content
      * @return bool
      */
-    public function filterContent($content)
+    public function checkContent($content)
     {
         $content = strtolower($content);
         $content = trim($content);

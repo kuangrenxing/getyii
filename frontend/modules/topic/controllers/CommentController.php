@@ -5,7 +5,7 @@ namespace frontend\modules\topic\controllers;
 use common\models\UserInfo;
 use common\services\NotificationService;
 use common\services\PostService;
-use common\services\TopicService;
+use common\services\TalkService;
 use frontend\models\Notification;
 use frontend\modules\topic\models\Topic;
 use frontend\modules\user\models\UserMeta;
@@ -52,9 +52,9 @@ class CommentController extends Controller
     {
         $model = new PostComment();
         if ($model->load(Yii::$app->request->post())) {
-            $topService = new TopicService();
-            if (!$topService->filterContent($model->comment)) {
-                $model->addError('comment', '回复内容请勿回复无意义的内容，如你想收藏或赞等功能，请直接操作这篇帖子。');
+            $talkService = new TalkService();
+            if (!$talkService->checkContent($model->comment)) {
+                $model->addError('comment', '敏感信息请勿发表');
                 return $this->redirect(['/topic/default/view', 'id' => $id]);
             }
             $model->user_id = Yii::$app->user->id;

@@ -6,7 +6,7 @@ namespace common\services;
 use common\models\User;
 use frontend\modules\topic\models\Topic;
 
-class TopicService extends PostService
+class TalkService extends PostService
 {
 
     public function userDoAction($id, $action)

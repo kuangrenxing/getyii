@@ -77,7 +77,7 @@ class DefaultController extends Controller
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
             $topService = new TweetService();
-            if (!$topService->filterContent($model->content)) {
+            if (!$topService->checkContent($model->content)) {
                 $model->addError('content', '内容无实际内容，请勿灌水噢');
                 return $this->redirect('index');
             }

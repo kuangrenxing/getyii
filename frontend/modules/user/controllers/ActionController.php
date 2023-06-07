@@ -4,7 +4,7 @@
 namespace frontend\modules\user\controllers;
 
 use common\services\CommentService;
-use common\services\TopicService;
+use common\services\TalkService;
 use common\services\TweetService;
 use Yii;
 use common\components\Controller;
@@ -31,8 +31,8 @@ class ActionController extends Controller
     {
         switch ($type) {
             case 'topic':
-                $topicService = new TopicService();
-                list($result, $data) = $topicService->userDoAction($id, 'like');
+                $talkService = new TalkService();
+                list($result, $data) = $talkService->userDoAction($id, 'like');
                 break;
             case 'tweet':
                 $tweetService = new TweetService();
@@ -65,8 +65,8 @@ class ActionController extends Controller
     public function actionHate($type, $id)
     {
         if ($type == 'topic') {
-            $topicService = new TopicService();
-            list($result, $data) = $topicService->userDoAction($id, 'hate');
+            $talkService = new TalkService();
+            list($result, $data) = $talkService->userDoAction($id, 'hate');
 
             if ($result) {
                 return $this->message('提交成功!', 'success');
@@ -85,8 +85,8 @@ class ActionController extends Controller
     public function actionFollow($type, $id)
     {
         if ($type == 'topic') {
-            $topicService = new TopicService();
-            list($result, $data) = $topicService->userDoAction($id, 'follow');
+            $talkService = new TalkService();
+            list($result, $data) = $talkService->userDoAction($id, 'follow');
 
             if ($result) {
                 return $this->message('提交成功!', 'success');
@@ -105,8 +105,8 @@ class ActionController extends Controller
     public function actionThanks($type, $id)
     {
         if ($type == 'topic') {
-            $topicService = new TopicService();
-            list($result, $data) = $topicService->userDoAction($id, 'thanks');
+            $talkService = new TalkService();
+            list($result, $data) = $talkService->userDoAction($id, 'thanks');
 
             if ($result) {
                 return $this->message('提交成功!', 'success');
@@ -125,8 +125,8 @@ class ActionController extends Controller
     public function actionFavorite($type, $id)
     {
         if ($type == 'topic') {
-            $topicService = new TopicService();
-            list($result, $data) = $topicService->userDoAction($id, 'favorite');
+            $talkService = new TalkService();
+            list($result, $data) = $talkService->userDoAction($id, 'favorite');
 
             if ($result) {
                 return $this->message('提交成功!', 'success');
